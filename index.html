@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEV NOTES</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- javaScript with defer to manipulate DOM -->
+    <script src="js/scripts.js" defer></script>
+    <!-- load Bootstrap icons library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>DevNotes</h1>
+
+      <!-- button tag allow to put together text and image/icon,
+input is more for click events in JS -->
+
+      <!-- create a container to show search icon and search input field -->
+      <div id="search-container">
+        <!-- create search icon -->
+        <i class="bi bi-search"></i>
+        <!-- create the search input field -->
+        <input
+          type="text"
+          name="search-input"
+          id="search-input"
+          placeholder="Search your note"
+        />
+      </div>
+      <!-- create text with button -->
+      <button id="export-notes">
+        Export CSV <i class="bi bi-download"></i>
+      </button>
+    </header>
+    <main>
+      <!-- create a container to show addition input field and addition icon -->
+      <div id="add-note-container">
+        <!-- create the addition input field -->
+        <input
+          type="text"
+          name="note-content"
+          id="note-content"
+          placeholder="Add your note here"
+        />
+        <!-- create the addition icon -->
+        <button class="add-note"><i class="bi bi-plus-lg"></i></button>
+      </div>
+      <!-- create a container to show all created notes -->
+      <div id="notes-container">
+        <!-- the following container is just for format purpose CSS
+         all tags will be created by JS -->
+        <!-- create a container to self contain each note -->
+            <div class="note">
+                <!-- textarea to contain the note text and a placeholder 
+                 if text is empety -->
+                <textarea placeholder="some text....."></textarea>
+                <!-- create pin icon -->
+                <i class="bi bi-pin"></i>
+                <!-- create delete icon -->
+                <i class="bi bi-x-lg"></i>
+                <!-- create copy icon -->
+                <i class="bi bi-file-earmark-plus"></i>
+            </div>
+      </div>
+    </main>
+  </body>
+</html>

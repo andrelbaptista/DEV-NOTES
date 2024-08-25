@@ -100,6 +100,7 @@ header {
     color: var(--color3);
 }
 
+/* format button */
 #add-note-container button {
     cursor: pointer;
     background-color: var(--color6);
@@ -107,6 +108,7 @@ header {
     opacity: .6;
 }
 
+/* button animation */
 #add-note-container button:hover {
     opacity: 1;
 }

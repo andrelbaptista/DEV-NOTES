@@ -201,6 +201,7 @@ create a button style */
   color: var(--color3);
 }
 
+/* class fixed shpw up notes in different background color */
 .note.fixed {
 background-color: var(--color10);
 }

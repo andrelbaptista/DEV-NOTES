@@ -205,3 +205,25 @@ create a button style */
 .note.fixed {
 background-color: var(--color10);
 }
+
+/* responsiviness */
+@media (max-width: 450px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  #search-container {
+    width: 100%;
+  }
+  #search-input {
+    width: 100%;
+  }
+  #add-note-container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  #notes-container {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}
